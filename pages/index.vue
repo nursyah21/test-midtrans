@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen justify-center items-center">
+    <div class="flex h-screen justify-center items-center ">
         <div v-if="loading">
             Please wait...
         </div>
