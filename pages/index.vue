@@ -18,6 +18,9 @@
                 <UButton @click="submitMidtrans" color="blue">submit midtrans</UButton>
                 <UButton :disabled="!link" @click="onPay">pay here</UButton>
             </div>
+            <h1 class="mt-4">
+                <NuxtLink target="_blank" to="https://simulator.sandbox.midtrans.com/qris/index" class="text-blue-500 hover:underline">simulator midtrans payment</NuxtLink>
+            </h1>
         </div>
     </div>
 </template>
@@ -74,7 +77,6 @@ async function checkMidtrans(data: any) {
         body: { data }
     });
 
-    // @t
     const message = res.status;
     if (message) {
         useToast().add({ id: 'status', title: 'status', description: message });

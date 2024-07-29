@@ -6,6 +6,8 @@
 .cache
 dist
 
+bun.lockb
+
 # Node dependencies
 node_modules
 
@@ -22,3 +24,4 @@ logs
 .env
 .env.*
 !.env.example
+.vercel
